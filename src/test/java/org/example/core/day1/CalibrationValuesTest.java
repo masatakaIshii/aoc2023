@@ -37,4 +37,12 @@ class CalibrationValuesTest {
                 """;
     assertThat(CalibrationValues.getSum(content)).isEqualTo(29);
   }
+
+  @Test
+  void should_return_38_when_content_is_threeight() {
+    var content = """
+        threeight
+                """;
+    assertThat(CalibrationValues.getSum(content)).isEqualTo(38);
+  }
 }
