@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.core.day2.CubeConundrum;
+import org.example.core.day3.GearRatios;
 import org.example.shell.ReadFile;
 
 import java.io.IOException;
@@ -14,8 +14,8 @@ public class Main {
   public static void main(String[] args) {
 
     try {
-      var content = ReadFile.read("day2.txt");
-      var result = CubeConundrum.sumOfPowerOfSets(content);
+      var content = ReadFile.read("day3.txt");
+      var result = GearRatios.sumOfGearRatios(content);
       logger.log(Level.INFO,"{0}", result);
     } catch (URISyntaxException | IOException e) {
       throw new RuntimeException(e);
