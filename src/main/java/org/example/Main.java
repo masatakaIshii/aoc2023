@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.core.day5.GiveASeedAFertilizer;
+import org.example.core.day6.BoatRaces;
 import org.example.shell.ReadFile;
 
 import java.io.IOException;
@@ -14,8 +14,8 @@ public class Main {
   public static void main(String[] args) {
 
     try {
-      var content = ReadFile.read("day5.txt");
-      var result = GiveASeedAFertilizer.getLowerLocationNumberToAnyInitSeedNumbers(content);
+      var content = ReadFile.read("day6.txt");
+      var result = BoatRaces.numberWaysToBeatRecordLongRace(content);
       logger.log(Level.INFO,"{0}", result);
     } catch (URISyntaxException | IOException e) {
       throw new RuntimeException(e);
