@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.core.day7.CamelCards;
+import org.example.core.day8.HauntedWasteland;
 import org.example.shell.ReadFile;
 
 import java.io.IOException;
@@ -15,8 +15,8 @@ public class Main {
   public static void main(String[] args) {
     long startTime = System.currentTimeMillis();
     try {
-      var content = ReadFile.read("day7.txt");
-      var result = CamelCards.getTotalWinningsWithJoker(content);
+      var content = ReadFile.read("day8.txt");
+      var result = HauntedWasteland.getStepsToReachAllNodesEndedByZ(content);
       logger.log(Level.INFO,"{0}", result);
 
       long endTime = System.currentTimeMillis();
